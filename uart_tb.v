@@ -22,7 +22,8 @@ module uart_tb;
     reg [PAYLOAD_BITS-1:0] i_data;
     wire tx_done, rx_done;
     wire tx_busy;
-    wire [PAYLOAD_BITS-1:0] interface_data, o_data;
+    wire interface_data;
+    wire [PAYLOAD_BITS-1:0] o_data;
 
     uart_tx #(BIT_RATE, CLK_FREQ_TX, PAYLOAD_BITS) u_uart_tx (
         .clk(clk_tx), .reset_n(reset_n_tx),
