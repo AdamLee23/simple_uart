@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="Jinhua@Visinex"
+		module="uart_2.12"
+		revision="0.1"
+		conf="plugin"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20210812101022"/>
+	<dependencies>
+		<module organisation="org.scalamacros" name="paradise_2.12.12">
+			<revision name="2.1.1" status="release" pubdate="20200713171026" resolver="public" artresolver="public" homepage="https://github.com/scalamacros/paradise" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="successful" details="" size="2020" time="636" location="C:\Users\lijinhua\.ivy2\cache\org.scalamacros\paradise_2.12.12\ivy-2.1.1.xml" searched="true" original-local-location="C:\Users\lijinhua\.ivy2\cache\org.scalamacros\paradise_2.12.12\ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/paradise_2.12.12/2.1.1/paradise_2.12.12-2.1.1.pom"/>
+				<caller organisation="Jinhua@Visinex" name="uart_2.12" conf="plugin" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="paradise_2.12.12" type="jar" ext="jar" status="successful" details="" size="148211" time="1034" location="C:\Users\lijinhua\.ivy2\cache\org.scalamacros\paradise_2.12.12\jars\paradise_2.12.12-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/paradise_2.12.12/2.1.1/paradise_2.12.12-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.berkeley.cs" name="chisel3-plugin_2.12.12">
+			<revision name="3.4.2" status="release" pubdate="20210202091651" resolver="public" artresolver="public" homepage="http://chisel.eecs.berkeley.edu/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="apache-v2" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="successful" details="" size="1925" time="722" location="C:\Users\lijinhua\.ivy2\cache\edu.berkeley.cs\chisel3-plugin_2.12.12\ivy-3.4.2.xml" searched="true" original-local-location="C:\Users\lijinhua\.ivy2\cache\edu.berkeley.cs\chisel3-plugin_2.12.12\ivy-3.4.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/edu/berkeley/cs/chisel3-plugin_2.12.12/3.4.2/chisel3-plugin_2.12.12-3.4.2.pom"/>
+				<caller organisation="Jinhua@Visinex" name="uart_2.12" conf="plugin" rev="3.4.2" rev-constraint-default="3.4.2" rev-constraint-dynamic="3.4.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="chisel3-plugin_2.12.12" type="jar" ext="jar" status="successful" details="" size="16525" time="998" location="C:\Users\lijinhua\.ivy2\cache\edu.berkeley.cs\chisel3-plugin_2.12.12\jars\chisel3-plugin_2.12.12-3.4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/berkeley/cs/chisel3-plugin_2.12.12/3.4.2/chisel3-plugin_2.12.12-3.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.12.12" status="release" pubdate="20200713080748" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3213" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-compiler\ivy-2.12.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.12/scala-compiler-2.12.12.pom"/>
+				<caller organisation="edu.berkeley.cs" name="chisel3-plugin_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="3.4.2"/>
+				<caller organisation="org.scalamacros" name="paradise_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="10745515" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.12/scala-compiler-2.12.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.6" status="release" pubdate="20161101222105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="2.12.12"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="547860" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.12" status="release" pubdate="20200713080406" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.12.12/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2678" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.12/scala-reflect-2.12.12.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.12.12"/>
+				<caller organisation="edu.berkeley.cs" name="chisel3-plugin_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="3.4.2"/>
+				<caller organisation="org.scalamacros" name="paradise_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3644859" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.12.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.12" status="release" pubdate="20200713080637" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.12.12/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2508" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.12.12"/>
+				<caller organisation="edu.berkeley.cs" name="chisel3-plugin_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="3.4.2"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.12.12"/>
+				<caller organisation="org.scalamacros" name="paradise_2.12.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5432322" time="0" location="C:\Users\lijinhua\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.12.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

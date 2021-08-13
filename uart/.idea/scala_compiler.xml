@@ -2,5 +2,18 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="untitled" />
+    <profile name="sbt 2" modules="uart">
+      <option name="reflectiveCalls" value="true" />
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-Xsource:2.11" />
+        <parameter value="-Xcheckinit" />
+      </parameters>
+      <plugins>
+        <plugin path="C:\Users\lijinhua\.ivy2\cache\edu.berkeley.cs\chisel3-plugin_2.12.12\jars\chisel3-plugin_2.12.12-3.4.2.jar" />
+        <plugin path="C:\Users\lijinhua\.ivy2\cache\org.scalamacros\paradise_2.12.12\jars\paradise_2.12.12-2.1.1.jar" />
+      </plugins>
+    </profile>
   </component>
 </project>
