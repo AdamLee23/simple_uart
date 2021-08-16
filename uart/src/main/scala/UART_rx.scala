@@ -23,7 +23,7 @@ class UART_rx (
   val clkCnterReg = RegInit(0.U(clkCnterBW.W))  // counting clk edges
   val bitCnterReg = RegInit(0.U(bitCnterBW.W))  // counting bits transmitted
 
-  val outDataReg = RegInit(VecInit(Seq.fill(payloadBits)(false.B)))
+  val outDataReg = RegInit(VecInit(Seq.fill(payloadBits)(false.B))) // output data reg
   val outRxDoneReg = RegInit(false.B)              // output rx done reg
   val stateReg = RegInit(idle)                  // fsm state reg
 
