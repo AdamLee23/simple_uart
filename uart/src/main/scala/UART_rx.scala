@@ -2,13 +2,11 @@ import chisel3._
 import chisel3.util._
 
 
-trait HasRxConfig {
-  val bitRate = 115200
-  val clkFreq = 16000000
-  val payloadBits = 8
-}
-
-class UART_rx extends Module with HasRxConfig {
+class UART_rx (
+              bitRate: Int = 115200,
+              clkFreq: Int = 16000000,
+              payloadBits: Int = 8
+              ) extends Module {
   val io = IO(new Bundle() {
     val i_serial_data = Input(Bool())
     val o_rx_done = Output(Bool())

@@ -2,13 +2,11 @@ import chisel3._
 import chisel3.util._
 
 
-trait HasTxConfig {
-  val bitRate = 115200
-  val clkFreq = 10000000
-  val payloadBits = 8
-}
-
-class UART_tx extends Module with HasTxConfig {
+class UART_tx (
+                bitRate: Int = 115200,
+                clkFreq: Int = 10000000,
+                payloadBits: Int = 8
+              ) extends Module {
   val io = IO(new Bundle() {
     val i_tx_trig = Input(Bool())
     val i_data = Input(UInt(payloadBits.W))
