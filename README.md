@@ -13,4 +13,5 @@ val reset_n = (!reset.asBool()).asAsyncReset()
   }
 ```
 to implement one, I intend not to do this here. Consequently, I did not do anything about the implicit reset signal, leading to a native active high synchronous reset in the verilog code generated from Chisel.  
+  
 For implementation detail, see <https://zhuanlan.zhihu.com/p/398783022>
