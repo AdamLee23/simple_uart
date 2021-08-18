@@ -1,0 +1,3 @@
+uart/target/scala-2.13/resolution-cache/reports/* linguist-vendored
+uart/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/* linguist-vendored
+uart/target/scala-2.12/resolution-cache/reports/* linguist-vendored
